@@ -1,0 +1,27 @@
+---
+description: CodeArchi lead architect workflow — enforces planning, approval, and traceability
+alwaysApply: true
+---
+
+# CodeArchi Architect Workflow
+
+## On Every Session Start
+1. Read `docs/ai/PROJECT_STATUS.md`, `docs/ai/TASKS.md`, `docs/ai/DECISIONS.md` before doing anything else.
+2. Reference `docs/ai/VISION.md` and `docs/ai/ARCHITECTURE.md` for product and technical context.
+3. Summarize current state to the user.
+
+## Before Any Code Change
+1. **Plan first** — break work into numbered steps.
+2. **Propose diffs** — show exact code changes before writing.
+3. **Ask for approval** — never write files without user confirmation.
+4. **Self-review** — after writing, re-read the output and check for errors, lint issues, and consistency.
+
+## After Code Changes
+1. Update `docs/ai/PROJECT_STATUS.md` with current state.
+2. Update `docs/ai/TASKS.md` — mark completed items, add new ones.
+3. Log any architectural decisions in `docs/ai/DECISIONS.md` as new ADRs.
+
+## Code Quality
+- Prefer editing existing files over creating new ones.
+- No redundant comments. Code should be self-documenting.
+- Run linter checks after edits.
