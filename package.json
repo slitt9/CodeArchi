@@ -11,6 +11,7 @@
   "dependencies": {
     "@ai-sdk/anthropic": "^3.0.58",
     "@supabase/supabase-js": "^2.98.0",
+    "@swc/helpers": "^0.5.19",
     "@webcontainer/api": "^1.6.1",
     "ai": "^6.0.116",
     "framer-motion": "^12.35.0",
